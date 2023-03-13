@@ -17,18 +17,25 @@ public class PlayerIm implements Player{
         this.cost = cost;
     }
 
+    //선택한 카드의 공격력 반환
     @Override
-    public void play() {
-
+    public int pick(int cardNum) {
+        CardIm card = handList.get(cardNum);
+        return card.atk;
     }
 
     @Override
     public void damage(int dam) {
-
+        this.hp -=dam;
     }
 
     @Override
     public void draw(CardIm card) {
+
+    }
+
+    @Override
+    public void viewCardList() {
 
     }
 }

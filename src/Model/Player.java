@@ -4,7 +4,9 @@ import java.awt.*;
 
 public interface Player{
 
-    void play();
+    int pick(int cardNum);
     void damage(int dam);
     void draw(CardIm card);
+
+    void viewCardList();
 }
